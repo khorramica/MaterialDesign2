@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".Part01.Login_Ebook_Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/book"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="#000" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/color_other_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="خوش آمدید"
+                android:textColor="@color/textColor_Ebook"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_login"
+            android:layout_below="@id/txt_header"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:tint="@color/textColor_Ebook"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_baseline_account_circle_24"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="8dp"
+                    android:hint="ايميل"
+                    android:textSize="14sp"
+                    android:paddingStart="24dp"
+                    android:gravity="right"
+                    android:background="@null"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+            <View
+                android:background="@color/textColor_Ebook"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                ></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:tint="@color/textColor_Ebook"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_baseline_lock_24"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="8dp"
+                    android:hint="رمز عبور"
+                    android:paddingStart="24dp"
+                    android:textSize="14sp"
+                    android:gravity="right"
+                    android:background="@null"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+            <View
+                android:background="@color/textColor_Ebook"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                ></View>
+
+
+        </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout_login"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/bg_btn_login"
+                android:text="ورود"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:id="@+id/btn_Login"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Login"
+                android:layout_marginTop="32dp"
+                android:text="فراموشی رمز عبور؟"
+                android:textColor="@color/textColor_Ebook"
+                android:textSize="12sp"
+                android:id="@+id/txt_ForgetPassword"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/txt_ForgetPassword"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_btn_register"
+                android:text="ثبت نام"
+                android:textColor="@color/textColor_Ebook"
+                android:textSize="12sp"
+                android:id="@+id/btn_register"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
