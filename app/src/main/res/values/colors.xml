@@ -10,7 +10,7 @@
 
 
     //Part 01 Ebook Colors
-    <color name="colorPrimary_Ebook">#6AA5E4</color>
+    <color name="colorPrimary_Ebook">#7B9FC6</color>
     <color name="colorPrimaryDark_Ebook">#fff</color>
     <color name="colorAccent_Ebook">#0757AC</color>
     <color name="textColor_Ebook">#F2020D35</color>

@@ -4,7 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_btn_login.xml" value="0.1095" />
-        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_login_ebook.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_home_ebook.xml" value="0.132" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_home_ebook_2.xml" value="0.132" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_home_ebook.xml" value="0.264" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_login_ebook.xml" value="0.3735881841876629" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
       </map>
     </option>
   </component>

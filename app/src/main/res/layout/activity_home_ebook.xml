@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary_Ebook"
+    android:layoutDirection="rtl"
+    tools:context=".Part01.Home_Ebook_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/ic_baseline_menu_24"
+                    app:tint="@color/textColor_Ebook" />
+
+                <RelativeLayout
+                    android:id="@+id/top_Panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_Menu"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/bg_home_ebook"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/txtTops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="محبوب ترین ها"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTops_All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="مشاهده همه"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtTops"
+                        android:layout_marginTop="8dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sound_Panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top_Panel"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/bg_home_ebook_2"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/txtSounds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کتابهای صوتی"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtSound_All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="مشاهده همه"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtSound_All"
+                        android:layout_marginTop="8dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/new_Panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sound_Panel"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/txtTops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="جدیدترین ها"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTops_All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="top"
+                        android:text="مشاهده همه"
+                        android:textColor="@color/textColor_Ebook"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/new_Panel"
+                    android:layout_marginTop="8dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

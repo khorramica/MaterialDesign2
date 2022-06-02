@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         app:cardCornerRadius="16dp"
+        android:id="@+id/card_Login"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         app:cardBackgroundColor="@color/color_other_background">
@@ -33,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#fff"
-            android:padding="24dp">
+            android:padding="40dp">
 
             <TextView
                 android:id="@+id/txt_header"
@@ -63,7 +64,7 @@
                     android:layout_height="match_parent"
                     android:tint="@color/textColor_Ebook"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_baseline_account_circle_24"/>
+                    app:srcCompat="@drawable/ic_baseline_email_24"/>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -121,6 +122,7 @@
 
 
             <Button
+                android:id="@+id/btn_Login"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_below="@id/layout_login"
@@ -129,7 +131,6 @@
                 android:text="ورود"
                 android:textColor="#fff"
                 android:textSize="12sp"
-                android:id="@+id/btn_Login"
                 android:textStyle="bold" />
 
 
@@ -160,5 +161,239 @@
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Register"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="16dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        app:cardBackgroundColor="@color/color_other_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="40dp">
+
+            <TextView
+                android:id="@+id/txt_header_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="ثبت نام"
+                android:textColor="@color/textColor_Ebook"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/img_Back"
+                android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_Register"
+                android:layout_below="@id/txt_header"
+                android:layout_marginTop="64dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tint="@color/textColor_Ebook"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_baseline_email_24"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/txt_Email_Register"
+                        android:paddingRight="8dp"
+                        android:hint="ايميل"
+                        android:textSize="14sp"
+                        android:paddingStart="24dp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="textEmailAddress"/>
+
+                </LinearLayout>
+                <View
+                    android:background="@color/textColor_Ebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    ></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tint="@color/textColor_Ebook"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_baseline_lock_24"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="8dp"
+                        android:id="@+id/txt_Password_Register"
+                        android:hint="رمز عبور"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="textPassword"/>
+
+                </LinearLayout>
+                <View
+                    android:background="@color/textColor_Ebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    ></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tint="@color/textColor_Ebook"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_baseline_phone_android_24"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="8dp"
+                        android:id="@+id/txt_Phone_Register"
+                        android:hint="09121234567"
+                        android:paddingStart="24dp"
+                        android:textSize="14sp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="phone"/>
+
+                </LinearLayout>
+                <View
+                    android:background="@color/textColor_Ebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    ></View>
+
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/layout_Register"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/bg_btn_register"
+                android:text="ثبت نام"
+                android:textColor="@color/textColor_Ebook"
+                android:textSize="12sp"
+                android:id="@+id/btn_register"
+                android:textStyle="bold" />
+
+<LinearLayout
+    android:layout_marginTop="32dp"
+    android:layout_below="@id/btn_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/layout_Or"
+    android:weightSum="10">
+
+    <View
+        android:layout_gravity="center"
+        android:layout_weight="4.75"
+        android:layout_width="0dp"
+        android:layout_height="0.75dp"
+        android:background="@color/textColor_Ebook"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/textColor_Ebook"
+        android:text="یا"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_weight="4.75"
+        android:layout_width="0dp"
+        android:layout_height="0.75dp"
+        android:background="@color/textColor_Ebook"/>
+
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_Or"
+                android:layout_marginTop="32dp">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/linkedin"/>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/twitter"/>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/google_plus"/>
+
+                <ImageView
+                    android:layout_marginRight="8dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:srcCompat="@drawable/facebook"/>
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
 
 </RelativeLayout>
