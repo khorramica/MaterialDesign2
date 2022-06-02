@@ -17,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -63,6 +62,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txtTops"
+                        android:id="@+id/recycleViewer_Popular"
                         android:layout_marginTop="8dp" />
 
                 </RelativeLayout>
@@ -100,6 +100,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/txtSound_All"
+                        android:id="@+id/recycleViewer_Voice"
                         android:layout_marginTop="8dp" />
 
                 </RelativeLayout>
@@ -140,6 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/new_Panel"
+                    android:id="@+id/recycleViewer_New"
+                    android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp" />
 
             </RelativeLayout>

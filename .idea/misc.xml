@@ -6,9 +6,14 @@
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_btn_login.xml" value="0.1095" />
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_home_ebook.xml" value="0.132" />
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/bg_home_ebook_2.xml" value="0.132" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/drawable/ic_baseline_headset_24.xml" value="0.132" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_detail_book.xml" value="0.23802083333333332" />
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_home_ebook.xml" value="0.264" />
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_login_ebook.xml" value="0.3735881841876629" />
         <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/activity_main.xml" value="0.23802083333333332" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/item_new_book.xml" value="0.536" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/item_popular_book.xml" value="0.8" />
+        <entry key="..\:/Projects/Android/MaterialDesign2/app/src/main/res/layout/item_sound_book.xml" value="0.23697916666666666" />
       </map>
     </option>
   </component>
